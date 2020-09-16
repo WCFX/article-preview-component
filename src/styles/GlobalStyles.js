@@ -24,6 +24,9 @@ export default createGlobalStyle`
     background-color: var(--bg-color);
     
   }
+  h1,h2,h3,h4 {
+    color: var(--font-color);
+  }
 
 
 `;

@@ -5,15 +5,13 @@ import {
   Card,
   ProductSidebar,
   ProductMain,
-  Profile
+  Profile,
+  InformationCard
 } from './styles';
 
 import AvatarMichelle from '../../assets/avatar-michelle.jpg';
 import Drawers from '../../assets/drawers.jpg';
-// import { FacebookIcon } from '../../assets/icon-facebook.svg';
-// import { PinterestIcon } from '../../assets/icon-pinterest.svg';
-// import { TwitterIcon } from '../../assets/icon-twitter.svg';
-// import ShareIcon from '../../assets/icon-share.svg';
+
 
 const Home = () => {
   return (
@@ -25,32 +23,26 @@ const Home = () => {
         </ProductSidebar>
 
         <ProductMain>
-          <h1>
-          Shift the overall look and feel by adding these wonderful 
-          touches to furniture in your home
-          </h1>
-          <p>
-          Ever been in a room and felt like something was missing? Perhaps 
-          it felt slightly bare and uninviting. I’ve got some simple tips 
-          to help you make any room feel complete.
-          </p>
-          <div>
+          <InformationCard>
+            <h1>
+            Shift the overall look and feel by adding these wonderful 
+            touches to furniture in your home
+            </h1>
+            <p>
+            Ever been in a room and felt like something was missing? Perhaps 
+            it felt slightly bare and uninviting. I’ve got some simple tips 
+            to help you make any room feel complete.
+            </p>
+          </InformationCard>
+          <Profile>
             <img src={AvatarMichelle}  alt="Profile" />
-            <h2>
-            Michelle Appleton
-            </h2>
-            
-            <h3>
-            28 Jun 2020
-            </h3>
-            
-          </div>
+            <ul>
+              <h2>Michelle Appleton</h2>
+              <h3>28 Jun 2020</h3>
+            </ul>
+          </Profile>    
+      
         </ProductMain>
-
-        <Profile>
-
-          
-        </Profile>    
 
 
       </Card>

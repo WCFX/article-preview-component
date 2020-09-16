@@ -7,7 +7,6 @@ export const Container = styled.div`
   align-items: center;
   padding: 1em;
 
-
 `;
 export const Card = styled.div`
   display: flex;
@@ -22,7 +21,6 @@ export const Card = styled.div`
 export const ProductSidebar = styled.div`
 
   width: 900px;
-  /* padding: 2em; */
 
   > img {
     max-width: 300px;
@@ -31,40 +29,44 @@ export const ProductSidebar = styled.div`
   }
 `;
 export const ProductMain = styled.div`
-  
+  margin: 20px 35px 30px 20px;
+
+`;
+export const InformationCard = styled.div`
+
+  margin: 20px 0;  
 
   > h1 {
+    letter-spacing: 0.020rem;
     font-weight: 700;
     color: var(--font-color);
-    font-size: 1.3rem;
-    margin: 30px 35px;
+    font-size: 1.2rem;
     flex-wrap: wrap;
-
   }
   > p {
-    font-size: 1rem;
+    letter-spacing: 0.010rem;
+    margin-top: 15px;
+    font-size: 0.8rem;
     color: var(--font-color);
-    margin: -15px 35px 30px 35px;
-  }
-  > div {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin: 0 35px 20px 35px;
-
-    > img {
-      height: 50px;
-      width: 50px;
-      border-radius: 50%;
-      margin-right: 10px;
-    }
-    > h2 {
-      color: var(--font-color);
-      font-weight: 700;
-    }
   }
 `;
 export const Profile = styled.div`
-  display: flex;
 
+  margin-top: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+
+  > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+
+    margin-right: 15px;
+  }
+  > ul h3 {
+    font-weight: 400;
+  }
 `;
