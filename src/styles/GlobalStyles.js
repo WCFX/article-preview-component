@@ -5,7 +5,7 @@ export default createGlobalStyle`
   
   :root {
     --bg-color: #edf2f8;
-    --font-color: #afb6bd;
+    --font-color: #595f6f;
   }
   
   * {
@@ -15,10 +15,14 @@ export default createGlobalStyle`
   }
   
   body {
-    height : 100vh;
     
     font-family: 'Manrope', sans-serif;
     font-size: 62.5%;
+
+    display: grid;
+    place-items: center;
+    background-color: var(--bg-color);
+    
   }
 
 
